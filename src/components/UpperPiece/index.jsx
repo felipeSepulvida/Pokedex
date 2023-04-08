@@ -1,12 +1,21 @@
 import React from "react";
-import { PieceBackground, PieceBorder } from "./styles";
+import { BigLightContainer, LightsContainer, PieceContainer } from "./styles";
+import { LEDLight } from "../LEDLight";
 
 export function UpperPiece(){
     return(
-        <PieceBorder>
-            <PieceBackground>
-
-            </PieceBackground>
-        </PieceBorder>
+        <PieceContainer>
+            <BigLightContainer>
+                <div>
+                    <div />
+                </div>
+            </BigLightContainer>
+            <LightsContainer>
+                <LEDLight color='red' />
+                <LEDLight color='yellow' />
+                <LEDLight color='green' />
+            </LightsContainer>
+            
+        </PieceContainer>
     )
 }

@@ -7,5 +7,5 @@ export const PieceContainer = styled.div`
     
     background-color: #FF0040;
     border: solid 5px black;
-    z-index: 2;
+    z-index: 3;
 `

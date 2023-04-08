@@ -1,29 +1,71 @@
 import styled from "styled-components";
 
-export const PieceBorder = styled.div`
+export const PieceContainer = styled.div`
+    box-sizing: border-box;
+
+    background-color: #FF0040;
+
     width: 494px;
-    height: 195px;
+    height: 180px;
+    
+    display: flex;
+    gap: 20px;
+
+    padding: 20px;
+
+    border: solid 5px black;
+
+    transform: translate(3px, 116px);
+`
+
+export const BigLightContainer = styled.div`
+    box-sizing: border-box;
+
+    background-color: white;
+
+    width: 90px;
+    height: 90px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    z-index: 3;
+    border: 2px solid black;
+    border-radius: 50%;
 
-    transform: translate(2px, 116px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-    background-color: black;
+    div{
+        box-sizing: inherit;
 
-    -webkit-clip-path: polygon(100% 40%, 70% 40%, 55% 100%, 0 100%, 0 0, 100% 0);
-    clip-path: polygon(100% 43%, 70% 43%, 55% 100%, 0 100%, 0 0, 100% 0);
+        background-color: #609ED9;
+
+        position: relative;
+
+        width: 80px;
+        height: 80px;
+
+        border: inherit;
+        border-radius: 50%;
+
+        div{
+            background-color: white;
+
+            position: absolute;
+            left: 18.75%;
+            right: 50%;
+            top: 18.75%;
+            bottom: 50%;
+
+            width: 25px;
+            height: 25px;
+
+            filter: blur(5px);
+        }
+    }
 `
 
-export const PieceBackground = styled.div`
-    width: 484px;
-    height: 185px;
-
-    background-color: #FF0040;
-
-    -webkit-clip-path: polygon(100% 40%, 70% 40%, 55% 100%, 0 100%, 0 0, 100% 0);
-    clip-path: polygon(100% 40%, 70% 40%, 55% 100%, 0 100%, 0 0, 100% 0);
+export const LightsContainer = styled.div`
+    display: flex;
+    gap: 10px;
 `

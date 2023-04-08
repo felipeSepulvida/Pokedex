@@ -14,6 +14,8 @@ export const PageBorder = styled.div`
 
     -webkit-clip-path: polygon(44% 16.7%, 100% 16.7%, 100% 100%, 0 100%, 0 0, 19% 0);
     clip-path: polygon(44.5% 16.7%, 100% 16.7%, 100% 100%, 0 100%, 0 0, 20% 0);
+
+    z-index: 2;
 `
 
 

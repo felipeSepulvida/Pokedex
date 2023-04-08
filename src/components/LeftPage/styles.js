@@ -14,6 +14,8 @@ export const PageBorder = styled.div`
 
     -webkit-clip-path: polygon(75.4% 0, 100% 0, 100% 100%, 0 100%, 0 16.7%, 54.5% 16.7%);
     clip-path: polygon(75.4% 0, 100% 0, 100% 100%, 0 100%, 0 16.7%, 54.5% 16.7%);
+
+    z-index: 2;
 `
 export const PageBackground = styled.div`
     background-color: #FF0040;
