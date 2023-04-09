@@ -80,10 +80,20 @@ export const MainScreen = styled(Container)`
     width: 280px;
     height: 200px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
     border: 5px solid black;
     border-radius: 10px;
 
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    img{
+        width: 70%;
+    }
 `
 
 export const AudioOutputContainer = styled.div`

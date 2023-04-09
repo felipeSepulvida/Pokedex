@@ -6,7 +6,7 @@ import { SmallScreen } from "../SmallScreen";
 import { ArrowButton } from "../ArrowButton";
 
 
-export function LeftPage(){
+export function LeftPage(props){
     return(
         <PageBorder>
             <PageBackground>
@@ -15,7 +15,9 @@ export function LeftPage(){
                         <LEDLight color="red" />
                         <LEDLight color="red" />
                     </div>
-                    <MainScreen />
+                    <MainScreen>
+                        <img src={props.sprite} alt='' />
+                    </MainScreen>
                     <div>
                         <LEDLight color={'red'} />
                         <AudioOutputContainer>
@@ -31,7 +33,7 @@ export function LeftPage(){
                             <SmallButton color='red' />
                             <SmallButton color='blue' />
                         </ButtonsContainer>
-                        <SmallScreen />
+                        <SmallScreen types={props.types} />
                     </div>
                     <div>
                         <ArrowButton direction='up' gridPosition='1 / 2 / 2 / 3' />
